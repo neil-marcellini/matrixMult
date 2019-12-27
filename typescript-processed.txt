@@ -1,0 +1,350 @@
+/**
+* Name: Neil Marcellini
+* Lab/task: Lab 5
+* Date: 09/29/19
+**/
+Script started on 2019-09-29 22:30:23-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="76" LINES="23"]
+ake-build-debugalBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult$ cd cm
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/neil/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug$ make
+[100%] Built target matrixMult
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug$ cd bin
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin$ ./matrixMult in.txt
+
+MATRIX A1
+1 4
+2 5
+3 6
+
+MATRIX B1
+8 7 6
+5 4 3
+
+MATRIX A1 x B1
+28 23 18
+41 34 27
+54 45 36
+
+MATRIX A2
+1 5
+2 6
+3 7
+4 8
+
+MATRIX B2
+9 8 7 6 5
+4 3 2 1 0
+
+MATRIX A2 x B2
+29 23 17 11 5
+42 34 26 18 10
+55 45 35 25 15
+68 56 44 32 20
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin$ vim in.txt
+"in.txt" 15L, 83C▽  3 2 3
+1 4
+2 5
+3 6
+8 7 6
+5 4 3
+
+4 2 5
+1 5
+2 6
+3 7
+4 8
+9 8 7 6 5
+4 3 2 1 0
+
+~									    ~										~									    ~										~									    ~										~									    1,1All+q436f+q6b75+q6b64+q6b72+q6b6c+q2332+q2334+q2569+q2a37+q6b313 2 3
+1 4
+2 5
+3 6
+8 7 6
+5 4 3
+
+4 2 5
+1 5
+2 6
+3 7
+4 8
+9 8 7 6 5
+4 3 2 1 0
+
+"in.txt" 15L, 83Ci -- INSERT --1,1All22 3 14 2 32343 34 34565462,54323456345654321									~									    ~										~									    ~										~									    1,1All
+8 7 6~										 5,7All65f654321
+3 6~									       4,5All4321
+2 5~									       3,5All4321
+1 4~									       2,5All4321123245367483,1All523645767884,1All823745667585,1All423345267186,1All123045067087,1All023145067088,1All023045160767089,1All0230450671810,11,7654321323245262,5343432345,4321
+"in.txt" 17L, 104C written						       14,5All567891069 876556789109 876544323456543234532810 82343-41564323 11 3234304^[  16,3All::wq
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin$ cat in.txt
+4 4 4
+1 2 3 4
+5 6 7 8
+8 7 6 5
+4 3 2 1
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+
+3 2 2
+1 5
+2 6
+3 7
+0 -1
+1 0
+
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debuatrixMultm in.txt
+
+MATRIX A1
+1 2 3 4
+5 6 7 8
+8 7 6 5
+4 3 2 1
+
+MATRIX B1
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+
+MATRIX A1 x B1
+1 2 3 4
+5 6 7 8
+8 7 6 5
+4 3 2 1
+
+MATRIX A2
+1 5
+2 6
+3 7
+
+MATRIX B2
+0 -1
+1 0
+
+MATRIX A2 x B2
+5 -1
+6 -2
+7 -3
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin$
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin$ vim in.txt
+"in.txt" 17L, 104C▽  4 4 4
+1 2 3 4
+5 6 7 8
+8 7 6 5
+4 3 2 1
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+
+3 2 2
+1 5
+2 6
+3 7
+0 -1
+1 0
+
+~									    ~										~									    ~										~									    16,3All+q436f+q6b75+q6b64+q6b72+q6b6c+q2332+q2334+q2569+q2a37+q6b314 4 4
+1 2 3 4
+5 6 7 8
+8 7 6 5
+4 3 2 1
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+
+3 2 2
+1 5
+2 6
+3 7
+0 -1
+1 0
+
+"in.txt" 17L, 104C~@k	5~@k   4~@k   3~@k   2~@k   1~@k   0,0-1~@k   9,3   ~@k   8~@k	 7~@k	6~@k   5~@k   4~@k   3~@k   2~@k   1~@k   2~@k	 12~@k	~ 3i -- INSERT --1,3All24 4 12 4 423456536254345678910,11,4234567,16,4321   ~										~									    16,3All
+0 -1~										15,5All4321
+3 7~									       14,5All4321
+2 6~									       13,5All4321
+1 5~									       12,5All4321
+3 2 2~										 11,6All54321
+~									    10,1All
+0 0 0 1~									   9,8All7654321
+0 0 1 0~									   8,8All7654321
+0 1 0 0~									   7,8All7654321
+1 0 0 0~									   6,8All7654321
+4 3 2 1~									   5,8All7654321
+8 7 6 5~									   4,8All7654321
+5 6 7 8~									   3,8All7654321
+"in.txt" 15L, 72C written							   2,8All7654344566718093,1All223745567384,1All123445665,1All223745566,1All02192304516177,1All323145068,1All9,1All12324536748951010,1All1211,1All2212,1All3213,1All4214,1All52^[  14,1All::wq
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin$ atrixMultt
+
+MATRIX A1
+1 4 6 10
+2 7 5 3
+
+MATRIX B1
+1 4 6
+2 7 5
+9 0 11
+3 1 0
+
+MATRIX A1 x B1
+93 42 92
+70 60 102
+
+MATRIX A2
+4 5
+
+MATRIX B2
+1 2 3
+4 5 0
+
+MATRIX A2 x B2
+24 33 12
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin$ vim in.txt
+"in.txt" 15L, 72C▽  2 4 3
+1 4 6 10
+2 7 5 3
+1 4 6
+2 7 5
+9 0 11
+3 1 0
+
+1 2 3 4 5
+1
+2
+3
+4
+5
+
+~									    ~										~									    ~										~									    ~										~									    14,1All+q436f+q6b75+q6b64+q6b72+q6b6c+q2332+q2334+q2569+q2a37+q6b312 4 3
+1 4 6 10
+2 7 5 3
+1 4 6
+2 7 5
+9 0 11
+3 1 0
+
+1 2 3 4 5
+1
+2
+3
+4
+5
+
+"in.txt" 16L, 78C~written@k   2~@k   1~@k   0~@k   9,1 ~@k   8,0-1^M  9,1  i~-- INSERT --9,1All89,1All12344516^[  9,5All::wq				~									    ~										~									    ~										~									    14,1All
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin$ atrixMultt
+
+MATRIX A1
+1 4 6 10
+2 7 5 3
+
+MATRIX B1
+1 4 6
+2 7 5
+9 0 11
+3 1 0
+
+MATRIX A1 x B1
+93 42 92
+70 60 102
+
+MATRIX A2
+1 2 3 4
+
+MATRIX B2
+5
+1
+2
+3
+
+MATRIX A2 x B2
+25
+viml@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin$ ./matrixMult in.txt
+"in.txt" 16L, 78C▽  2 4 3
+1 4 6 10
+2 7 5 3
+1 4 6
+2 7 5
+9 0 11
+3 1 0
+
+1 4 1
+1 2 3 4 5
+1
+2
+3
+4
+5
+
+~									    ~										~									    ~										~									    ~										9,5All+q436f+q6b75+q6b64+q6b72+q6b6c+q2332+q2334+q2569+q2a37+q6b312 4 3
+1 4 6 10
+2 7 5 3
+1 4 6
+2 7 5
+9 0 11
+3 1 0
+
+1 4 1
+1 2 3 4 5
+1
+2
+3
+4
+5
+
+"in.txt" 16L, 78C~written,5~@k	 4~@k	3~@k   2~@k   1~@k   9,1 ~@k   2~@k ~ 3~@k   4~@k   35~@k    5~@k   4~@k   35i	-- INSERT --9,3All4135 1456^[  9,5All::wq								    ~										~									    ~										9,5All
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin$ atrixMultt
+
+MATRIX A1
+1 4 6 10
+2 7 5 3
+
+MATRIX B1
+1 4 6
+2 7 5
+9 0 11
+3 1 0
+
+MATRIX A1 x B1
+93 42 92
+70 60 102
+
+MATRIX A2
+1 2 3 4 5
+
+MATRIX B2
+1
+2
+3
+4
+5
+
+MATRIX A2 x B2
+55
+neil@neil-VirtualBox:~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin$ exit
+exit
+
+Script done on 2019-09-29 22:55:33-07:00 [COMMAND_EXIT_CODE="0"]

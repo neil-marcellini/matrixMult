@@ -1,0 +1,403 @@
+/**
+* Name: Neil Marcellini
+* Lab/task: Lab 5
+* Date: 09/29/19
+**/
+Script started on 2019-09-29 22:30:23-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="76" LINES="23"]
+]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult[00m$ cd cm 
+ake-build-debug
+]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug[00m$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/neil/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug
+]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug[00m$ make
+[100%] Built target matrixMult
+]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug[00m$ cd bin
+]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[00m$ ./matrixMult in.txt
+
+MATRIX A1
+1 4 
+2 5 
+3 6 
+
+MATRIX B1
+8 7 6 
+5 4 3 
+
+MATRIX A1 x B1
+28 23 18 
+41 34 27 
+54 45 36 
+
+MATRIX A2
+1 5 
+2 6 
+3 7 
+4 8 
+
+MATRIX B2
+9 8 7 6 5 
+4 3 2 1 0 
+
+MATRIX A2 x B2
+29 23 17 11 5 
+42 34 26 18 10 
+55 45 35 25 15 
+68 56 44 32 20 
+]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[00m$ vim in.txt
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;23r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[23;1H"in.txt" 15L, 83C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H3 2 3
+1 4
+2 5
+3 6
+8 7 6
+5 4 3
+
+4 2 5
+1 5
+2 6
+3 7
+4 8
+9 8 7 6 5
+4 3 2 1 0
+
+[94m~                                                                           [17;1H~                                                                           [18;1H~                                                                           [19;1H~                                                                           [20;1H~                                                                           [21;1H~                                                                           [22;1H~                                                                           [m[23;59H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H3 2 3
+1 4
+2 5
+3 6
+8 7 6
+5 4 3
+
+4 2 5
+1 5
+2 6
+3 7
+4 8
+9 8 7 6 5
+4 3 2 1 0
+
+[94m~                                                                           [17;1H~                                                                           [18;1H~                                                                           [19;1H~                                                                           [20;1H~                                                                           [21;1H~                                                                           [22;1H~                                                                           [m[23;59H1,1[11CAll
+"in.txt" 15L, 83C[1;1H[?25h[?25l[23;49Hi[1;1H[23;49H [1;1H[23;1H[1m-- INSERT --[m[23;13H[K[23;59H1,1[11CAll[1;1H[?25h[?25l[23;61H2[1;2H[?25h[?25l 2 3 [23;61H1[1;1H[?25h[?25l4 2 3[23;61H2[1;2H[?25h[?25l[23;61H3[1;3H[?25h[?25l[23;61H4[1;4H[?25h[?25l 3 [23;61H3[1;3H[?25h[?25l4 3[23;61H4[1;4H[?25h[?25l[23;61H5[1;5H[?25h[?25l[23;61H6[1;6H[?25h[?25l [23;61H5[1;5H[?25h[?25l4[23;61H6[1;6H[?25h[?25l[23;59H2,5[2;5H[?25h[?25l[23;61H4[2;4H[?25h[?25l[23;61H3[2;3H[?25h[?25l[23;61H2[2;2H[?25h[?25l[23;59H3[3;2H[?25h[?25l[23;59H4[4;2H[?25h[?25l[23;59H5[5;2H[?25h[?25l[23;59H6[6;2H[?25h[?25l[23;61H3[6;3H[?25h[?25l[23;61H4[6;4H[?25h[?25l[23;61H5[6;5H[?25h[?25l[23;61H6[6;6H[?25h[?25l[6;5H[K[23;61H5[6;5H[?25h[?25l[23;61H4[6;4H[?25h[?25l[6;3H[K[23;61H3[6;3H[?25h[?25l[23;61H2[6;2H[?25h[?25l[6;1H[K[23;61H1[6;1H[?25h[?25l[5;22r[22;1H
+[1;23r[5;1H8 7 6[22;1H[94m~                                                                           [m[23;59H[K[23;59H5,7[11CAll[5;7H[?25h[?25l[23;61H6[5;6H[?25h[?25l[5;5H[K[23;61H5[5;5H[?25h[?25lf[23;61H6[5;6H[?25h[?25l[5;5H[K[23;61H5[5;5H[?25h[?25l[23;61H4[5;4H[?25h[?25l[5;3H[K[23;61H3[5;3H[?25h[?25l[23;61H2[5;2H[?25h[?25l[5;1H[K[23;61H1[5;1H[?25h[?25l[4;22r[22;1H
+[1;23r[4;1H3 6[22;1H[94m~                                                                           [m[23;59H[K[23;59H4,5[11CAll[4;5H[?25h[?25l[23;61H4[4;4H[?25h[?25l[4;3H[K[23;61H3[4;3H[?25h[?25l[23;61H2[4;2H[?25h[?25l[4;1H[K[23;61H1[4;1H[?25h[?25l[3;22r[22;1H
+[1;23r[3;1H2 5[22;1H[94m~                                                                           [m[23;59H[K[23;59H3,5[11CAll[3;5H[?25h[?25l[23;61H4[3;4H[?25h[?25l[3;3H[K[23;61H3[3;3H[?25h[?25l[23;61H2[3;2H[?25h[?25l[3;1H[K[23;61H1[3;1H[?25h[?25l[2;22r[22;1H
+[1;23r[2;1H1 4[22;1H[94m~                                                                           [m[23;59H[K[23;59H2,5[11CAll[2;5H[?25h[?25l[23;61H4[2;4H[?25h[?25l[2;3H[K[23;61H3[2;3H[?25h[?25l[23;61H2[2;2H[?25h[?25l[2;1H[K[23;61H1[2;1H[?25h[?25l1[23;61H2[2;2H[?25h[?25l[23;61H3[2;3H[?25h[?25l2[23;61H4[2;4H[?25h[?25l[23;61H5[2;5H[?25h[?25l3[23;61H6[2;6H[?25h[?25l[23;61H7[2;7H[?25h[?25l4[23;61H8[2;8H[?25h[?25l[3;22r[3;1H[L[1;23r[23;59H[K[23;59H3,1[11CAll[3;1H[?25h[?25l5[23;61H2[3;2H[?25h[?25l[23;61H3[3;3H[?25h[?25l6[23;61H4[3;4H[?25h[?25l[23;61H5[3;5H[?25h[?25l7[23;61H6[3;6H[?25h[?25l[23;61H7[3;7H[?25h[?25l8[23;61H8[3;8H[?25h[?25l[4;22r[4;1H[L[1;23r[23;59H[K[23;59H4,1[11CAll[4;1H[?25h[?25l8[23;61H2[4;2H[?25h[?25l[23;61H3[4;3H[?25h[?25l7[23;61H4[4;4H[?25h[?25l[23;61H5[4;5H[?25h[?25l6[23;61H6[4;6H[?25h[?25l[23;61H7[4;7H[?25h[?25l5[23;61H8[4;8H[?25h[?25l[5;22r[5;1H[L[1;23r[23;59H[K[23;59H5,1[11CAll[5;1H[?25h[?25l4[23;61H2[5;2H[?25h[?25l[23;61H3[5;3H[?25h[?25l3[23;61H4[5;4H[?25h[?25l[23;61H5[5;5H[?25h[?25l2[23;61H6[5;6H[?25h[?25l[23;61H7[5;7H[?25h[?25l1[23;61H8[5;8H[?25h[?25l[6;22r[6;1H[L[1;23r[23;59H[K[23;59H6,1[11CAll[6;1H[?25h[?25l1[23;61H2[6;2H[?25h[?25l[23;61H3[6;3H[?25h[?25l0[23;61H4[6;4H[?25h[?25l[23;61H5[6;5H[?25h[?25l0[23;61H6[6;6H[?25h[?25l[23;61H7[6;7H[?25h[?25l0[23;61H8[6;8H[?25h[?25l[7;22r[7;1H[L[1;23r[23;59H[K[23;59H7,1[11CAll[7;1H[?25h[?25l0[23;61H2[7;2H[?25h[?25l[23;61H3[7;3H[?25h[?25l1[23;61H4[7;4H[?25h[?25l[23;61H5[7;5H[?25h[?25l0[23;61H6[7;6H[?25h[?25l[23;61H7[7;7H[?25h[?25l0[23;61H8[7;8H[?25h[?25l[8;22r[8;1H[L[1;23r[23;59H[K[23;59H8,1[11CAll[8;1H[?25h[?25l0[23;61H2[8;2H[?25h[?25l[23;61H3[8;3H[?25h[?25l0[23;61H4[8;4H[?25h[?25l[23;61H5[8;5H[?25h[?25l1[23;61H6[8;6H[?25h[?25l0[23;61H7[8;7H[?25h[?25l[8;6H[K[23;61H6[8;6H[?25h[?25l[23;61H7[8;7H[?25h[?25l0[23;61H8[8;8H[?25h[?25l[9;22r[9;1H[L[1;23r[23;59H[K[23;59H9,1[11CAll[9;1H[?25h[?25l0[23;61H2[9;2H[?25h[?25l[23;61H3[9;3H[?25h[?25l0[23;61H4[9;4H[?25h[?25l[23;61H5[9;5H[?25h[?25l0[23;61H6[9;6H[?25h[?25l[23;61H7[9;7H[?25h[?25l1[23;61H8[9;8H[?25h[?25l[23;59H10,1[10;1H[?25h[?25l[23;60H1,7[11;7H[?25h[?25l[23;62H6[11;6H[?25h[?25l[11;5H[K[23;62H5[11;5H[?25h[?25l[23;62H4[11;4H[?25h[?25l[11;3H[K[23;62H3[11;3H[?25h[?25l[23;62H2[11;2H[?25h[?25l[11;1H[K[23;62H1[11;1H[?25h[?25l3[23;62H2[11;2H[?25h[?25l[23;62H3[11;3H[?25h[?25l2[23;62H4[11;4H[?25h[?25l[23;62H5[11;5H[?25h[?25l2[23;62H6[11;6H[?25h[?25l[23;60H2,5[12;5H[?25h[?25l[23;60H3[13;5H[?25h[?25l[23;60H4[14;5H[?25h[?25l[23;60H3[13;5H[?25h[?25l[23;60H4[14;5H[?25h[?25l[23;60H3[13;5H[?25h[?25l[23;60H2[12;5H[?25h[?25l[23;60H3[13;5H[?25h[?25l[23;60H4[14;5H[?25h[?25l[23;60H5,4[15;4H[?25h[?25l[15;3H[K[23;62H3[15;3H[?25h[?25l[23;62H2[15;2H[?25h[?25l[15;1H[K[23;62H1[15;1H[?25h[?25l[14;22r[22;1H
+[1;23r[14;1H3 7[22;1H[94m~                                                                           [m[23;59H[K[23;59H14,5[10CAll[14;5H[?25h[?25l[23;60H5[15;5H[?25h[?25l[23;62H6[15;6H[?25h[?25l[23;62H7[15;7H[?25h[?25l[23;62H8[15;8H[?25h[?25l[23;62H9[15;9H[?25h[?25l[23;62H10[15;10H[?25h[?25l[23;60H6[16;10H[?25h[?25l[16;9H[K[23;62H9 [16;9H[?25h[?25l[23;62H8[16;8H[?25h[?25l[16;7H[K[23;62H7[16;7H[?25h[?25l[23;62H6[16;6H[?25h[?25l[16;5H[K[23;62H5[16;5H[?25h[?25l[23;60H5[15;5H[?25h[?25l[23;62H6[15;6H[?25h[?25l[23;62H7[15;7H[?25h[?25l[23;62H8[15;8H[?25h[?25l[23;62H9[15;9H[?25h[?25l[23;62H10[15;10H[?25h[?25l[15;9H[K[23;62H9 [15;9H[?25h[?25l[23;62H8[15;8H[?25h[?25l[15;7H[K[23;62H7[15;7H[?25h[?25l[23;62H6[15;6H[?25h[?25l[15;5H[K[23;62H5[15;5H[?25h[?25l[23;62H4[15;4H[?25h[?25l[23;60H4[14;4H[?25h[?25l[23;60H3[13;4H[?25h[?25l[23;60H2[12;4H[?25h[?25l[23;60H3[13;4H[?25h[?25l[23;60H4[14;4H[?25h[?25l[23;60H5[15;4H[?25h[?25l[23;60H6[16;4H[?25h[?25l[23;60H5[15;4H[?25h[?25l[23;60H4[14;4H[?25h[?25l[23;60H3[13;4H[?25h[?25l[23;60H2[12;4H[?25h[?25l[23;60H3[13;4H[?25h[?25l[23;60H4[14;4H[?25h[?25l[23;60H5[15;4H[?25h[?25l[23;62H3[15;3H[?25h[?25l[23;62H2[15;2H[?25h[?25l 8[15;3H[K[23;62H1[15;1H[?25h[?25l0 8[23;62H2[15;2H[?25h[?25l[23;62H3[15;3H[?25h[?25l[23;62H4[15;4H[?25h[?25l[15;3H[K[23;62H3[15;3H[?25h[?25l-[23;62H4[15;4H[?25h[?25l1[23;62H5[15;5H[?25h[?25l[23;60H6[16;5H[?25h[?25l[23;62H4[16;4H[?25h[?25l[23;62H3[16;3H[?25h[?25l[23;62H2[16;2H[?25h[?25l 3 [23;62H1[16;1H[?25h[?25l1 3[23;62H2[16;2H[?25h[?25l[23;62H3[16;3H[?25h[?25l[23;62H4[16;4H[?25h[?25l [23;62H3[16;3H[?25h[?25l0[23;62H4[16;4H[?25h[23;1H[K[16;3H[?25l[23;49H^[[16;3H[23;49H  [16;4H[23;59H16,3[10CAll[16;3H[?25h[?25l[23;49H:[16;3H[23;49H[K[23;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h
+[?25l[?2004l"in.txt" 17L, 104C written
+[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[00m$ cat in.txt
+4 4 4 
+1 2 3 4
+5 6 7 8
+8 7 6 5
+4 3 2 1
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+
+3 2 2
+1 5 
+2 6 
+3 7 
+0 -1
+1 0 
+
+]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[00m$ cat in.txtvim[C[C[C[C[C[C[C[9@./matrixMult[C[C[C[C[C[C[C
+
+MATRIX A1
+1 2 3 4 
+5 6 7 8 
+8 7 6 5 
+4 3 2 1 
+
+MATRIX B1
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+
+MATRIX A1 x B1
+1 2 3 4 
+5 6 7 8 
+8 7 6 5 
+4 3 2 1 
+
+MATRIX A2
+1 5 
+2 6 
+3 7 
+
+MATRIX B2
+0 -1 
+1 0 
+
+MATRIX A2 x B2
+5 -1 
+6 -2 
+7 -3 
+]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-
+
+build-debug/bin[00m$ 
+[K[A]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[00m$ vim in.txt
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;23r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[23;1H"in.txt" 17L, 104C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H4 4 4
+1 2 3 4
+5 6 7 8
+8 7 6 5
+4 3 2 1
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+
+3 2 2
+1 5
+2 6
+3 7
+0 -1
+1 0
+
+[94m~                                                                           [19;1H~                                                                           [20;1H~                                                                           [21;1H~                                                                           [22;1H~                                                                           [m[23;59H16,3[10CAll[16;3H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H4 4 4
+1 2 3 4
+5 6 7 8
+8 7 6 5
+4 3 2 1
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+
+3 2 2
+1 5
+2 6
+3 7
+0 -1
+1 0
+
+[94m~                                                                           [19;1H~                                                                           [20;1H~                                                                           [21;1H~                                                                           [22;1H~                                                                           [m[23;59H16,3[10CAll
+"in.txt" 17L, 104C[16;3H[?25h[?25l[23;49H~@k[16;3H[23;49H   [15;3H[23;60H5[15;3H[?25h[?25l[23;49H~@k[15;3H[23;49H   [14;3H[23;60H4[14;3H[?25h[?25l[23;49H~@k[14;3H[23;49H   [13;3H[23;60H3[13;3H[?25h[?25l[23;49H~@k[13;3H[23;49H   [12;3H[23;60H2[12;3H[?25h[?25l[23;49H~@k[12;3H[23;49H   [11;3H[23;60H1[11;3H[?25h[?25l[23;49H~@k[11;3H[23;49H   [10;1H[23;60H0,0-1[10;1H[?25h[?25l[23;49H~@k[10;1H[23;49H   [9;3H[23;59H9,3   [9;3H[?25h[?25l[23;49H~@k[9;3H[23;49H   [8;3H[23;59H8[8;3H[?25h[?25l[23;49H~@k[8;3H[23;49H   [7;3H[23;59H7[7;3H[?25h[?25l[23;49H~@k[7;3H[23;49H   [6;3H[23;59H6[6;3H[?25h[?25l[23;49H~@k[6;3H[23;49H   [5;3H[23;59H5[5;3H[?25h[?25l[23;49H~@k[5;3H[23;49H   [4;3H[23;59H4[4;3H[?25h[?25l[23;49H~@k[4;3H[23;49H   [3;3H[23;59H3[3;3H[?25h[?25l[23;49H~@k[3;3H[23;49H   [2;3H[23;59H2[2;3H[?25h[?25l[23;49H~@k[2;3H[23;49H   [1;3H[23;59H1[1;3H[?25h[?25l[23;49H~@k[1;3H[23;49H   [1;2H[23;61H2[1;2H[?25h[?25l[23;49H~@k[1;2H[23;49H   [1;1H[23;61H1[1;1H[?25h[?25l[23;49H2[1;1H[?25h[?25l[23;50H~@k[1;1H[23;49H    [1;3H[23;61H3[1;3H[?25h[?25l[23;49Hi[1;3H[23;49H [1;3H[23;1H[1m-- INSERT --[m[23;13H[K[23;59H1,3[11CAll[1;3H[?25h[?25l[23;61H2[1;2H[?25h[?25l 4 4 [23;61H1[1;1H[?25h[?25l2 4 4[23;61H2[1;2H[?25h[?25l[23;61H3[1;3H[?25h[?25l[23;61H4[1;4H[?25h[?25l[23;61H5[1;5H[?25h[?25l[23;61H6[1;6H[?25h[?25l [23;61H5[1;5H[?25h[?25l3[23;61H6[1;6H[?25h[?25l[23;59H2[2;6H[?25h[?25l[23;61H5[2;5H[?25h[?25l[23;61H4[2;4H[?25h[?25l[23;59H3[3;4H[?25h[?25l[23;59H4[4;4H[?25h[?25l[23;59H5[5;4H[?25h[?25l[23;59H6[6;4H[?25h[?25l[23;59H7[7;4H[?25h[?25l[23;59H8[8;4H[?25h[?25l[23;59H9[9;4H[?25h[?25l[23;59H10,1[10;1H[?25h[?25l[23;60H1,4[11;4H[?25h[?25l[23;60H2[12;4H[?25h[?25l[23;60H3[13;4H[?25h[?25l[23;60H4[14;4H[?25h[?25l[23;60H5[15;4H[?25h[?25l[23;60H6[16;4H[?25h[?25l[23;60H7,1[17;1H[?25h[?25l[23;60H6,4[16;4H[?25h[?25l [23;62H3[16;3H[?25h[?25l[23;62H2[16;2H[?25h[?25l [23;62H1[16;1H[?25h[?25l[15;22r[22;1H
+[1;23r[15;1H0 -1[22;1H[94m~                                                                           [m[23;59H[K[23;59H15,5[10CAll[15;5H[?25h[?25l [23;62H4[15;4H[?25h[?25l [23;62H3[15;3H[?25h[?25l[23;62H2[15;2H[?25h[?25l [23;62H1[15;1H[?25h[?25l[14;22r[22;1H
+[1;23r[14;1H3 7[22;1H[94m~                                                                           [m[23;59H[K[23;59H14,5[10CAll[14;5H[?25h[?25l[23;62H4[14;4H[?25h[?25l [23;62H3[14;3H[?25h[?25l[23;62H2[14;2H[?25h[?25l [23;62H1[14;1H[?25h[?25l[13;22r[22;1H
+[1;23r[13;1H2 6[22;1H[94m~                                                                           [m[23;59H[K[23;59H13,5[10CAll[13;5H[?25h[?25l[23;62H4[13;4H[?25h[?25l [23;62H3[13;3H[?25h[?25l[23;62H2[13;2H[?25h[?25l [23;62H1[13;1H[?25h[?25l[12;22r[22;1H
+[1;23r[12;1H1 5[22;1H[94m~                                                                           [m[23;59H[K[23;59H12,5[10CAll[12;5H[?25h[?25l[23;62H4[12;4H[?25h[?25l [23;62H3[12;3H[?25h[?25l[23;62H2[12;2H[?25h[?25l [23;62H1[12;1H[?25h[?25l[11;22r[22;1H
+[1;23r[11;1H3 2 2[22;1H[94m~                                                                           [m[23;59H[K[23;59H11,6[10CAll[11;6H[?25h[?25l [23;62H5[11;5H[?25h[?25l[23;62H4[11;4H[?25h[?25l [23;62H3[11;3H[?25h[?25l[23;62H2[11;2H[?25h[?25l [23;62H1[11;1H[?25h[?25l[10;22r[22;1H
+[1;23r[22;1H[94m~                                                                           [m[23;59H[K[23;59H10,1[10CAll[10;1H[?25h[?25l[9;22r[22;1H
+[1;23r[9;1H0 0 0 1[22;1H[94m~                                                                           [m[23;59H[K[23;59H9,8[11CAll[9;8H[?25h[?25l [23;61H7[9;7H[?25h[?25l[23;61H6[9;6H[?25h[?25l [23;61H5[9;5H[?25h[?25l[23;61H4[9;4H[?25h[?25l [23;61H3[9;3H[?25h[?25l[23;61H2[9;2H[?25h[?25l [23;61H1[9;1H[?25h[?25l[8;22r[22;1H
+[1;23r[8;1H0 0 1 0[22;1H[94m~                                                                           [m[23;59H[K[23;59H8,8[11CAll[8;8H[?25h[?25l [23;61H7[8;7H[?25h[?25l[23;61H6[8;6H[?25h[?25l [23;61H5[8;5H[?25h[?25l[23;61H4[8;4H[?25h[?25l [23;61H3[8;3H[?25h[?25l[23;61H2[8;2H[?25h[?25l [23;61H1[8;1H[?25h[?25l[7;22r[22;1H
+[1;23r[7;1H0 1 0 0[22;1H[94m~                                                                           [m[23;59H[K[23;59H7,8[11CAll[7;8H[?25h[?25l [23;61H7[7;7H[?25h[?25l[23;61H6[7;6H[?25h[?25l [23;61H5[7;5H[?25h[?25l[23;61H4[7;4H[?25h[?25l [23;61H3[7;3H[?25h[?25l[23;61H2[7;2H[?25h[?25l [23;61H1[7;1H[?25h[?25l[6;22r[22;1H
+[1;23r[6;1H1 0 0 0[22;1H[94m~                                                                           [m[23;59H[K[23;59H6,8[11CAll[6;8H[?25h[?25l [23;61H7[6;7H[?25h[?25l[23;61H6[6;6H[?25h[?25l [23;61H5[6;5H[?25h[?25l[23;61H4[6;4H[?25h[?25l [23;61H3[6;3H[?25h[?25l[23;61H2[6;2H[?25h[?25l [23;61H1[6;1H[?25h[?25l[5;22r[22;1H
+[1;23r[5;1H4 3 2 1[22;1H[94m~                                                                           [m[23;59H[K[23;59H5,8[11CAll[5;8H[?25h[?25l [23;61H7[5;7H[?25h[?25l[23;61H6[5;6H[?25h[?25l [23;61H5[5;5H[?25h[?25l[23;61H4[5;4H[?25h[?25l [23;61H3[5;3H[?25h[?25l[23;61H2[5;2H[?25h[?25l [23;61H1[5;1H[?25h[?25l[4;22r[22;1H
+[1;23r[4;1H8 7 6 5[22;1H[94m~                                                                           [m[23;59H[K[23;59H4,8[11CAll[4;8H[?25h[?25l [23;61H7[4;7H[?25h[?25l[23;61H6[4;6H[?25h[?25l [23;61H5[4;5H[?25h[?25l[23;61H4[4;4H[?25h[?25l [23;61H3[4;3H[?25h[?25l[23;61H2[4;2H[?25h[?25l [23;61H1[4;1H[?25h[?25l[3;22r[22;1H
+[1;23r[3;1H5 6 7 8[22;1H[94m~                                                                           [m[23;59H[K[23;59H3,8[11CAll[3;8H[?25h[?25l [23;61H7[3;7H[?25h[?25l[23;61H6[3;6H[?25h[?25l [23;61H5[3;5H[?25h[?25l[23;61H4[3;4H[?25h[?25l [23;61H3[3;3H[?25h[?25l[23;61H2[3;2H[?25h[?25l [23;61H1[3;1H[?25h[?25l[2;22r[22;1H
+[1;23r[2;1H1 2 3 4[22;1H[94m~                                                                           [m[23;59H[K[23;59H2,8[11CAll[2;8H[?25h[?25l [23;61H7[2;7H[?25h[?25l[23;61H6[2;6H[?25h[?25l [23;61H5[2;5H[?25h[?25l[23;61H4[2;4H[?25h[?25l [23;61H3[2;3H[?25h[?25l4[23;61H4[2;4H[?25h[?25l[23;61H5[2;5H[?25h[?25l6[23;61H6[2;6H[?25h[?25l[23;61H7[2;7H[?25h[?25l1[23;61H8[2;8H[?25h[?25l0[23;61H9[2;9H[?25h[?25l[3;22r[3;1H[L[1;23r[23;59H[K[23;59H3,1[11CAll[3;1H[?25h[?25l2[23;61H2[3;2H[?25h[?25l[23;61H3[3;3H[?25h[?25l7[23;61H4[3;4H[?25h[?25l[23;61H5[3;5H[?25h[?25l5[23;61H6[3;6H[?25h[?25l[23;61H7[3;7H[?25h[?25l3[23;61H8[3;8H[?25h[?25l[4;22r[4;1H[L[1;23r[23;59H[K[23;59H4,1[11CAll[4;1H[?25h[?25l1[23;61H2[4;2H[?25h[?25l[23;61H3[4;3H[?25h[?25l4[23;61H4[4;4H[?25h[?25l[23;61H5[4;5H[?25h[?25l6[23;61H6[4;6H[?25h[?25l[5;22r[5;1H[L[1;23r[23;59H[K[23;59H5,1[11CAll[5;1H[?25h[?25l2[23;61H2[5;2H[?25h[?25l[23;61H3[5;3H[?25h[?25l7[23;61H4[5;4H[?25h[?25l[23;61H5[5;5H[?25h[?25l5[23;61H6[5;6H[?25h[?25l[6;22r[6;1H[L[1;23r[23;59H[K[23;59H6,1[11CAll[6;1H[?25h[?25l0[23;61H2[6;2H[?25h[?25l [23;61H1[6;1H[?25h[?25l9[23;61H2[6;2H[?25h[?25l[23;61H3[6;3H[?25h[?25l0[23;61H4[6;4H[?25h[?25l[23;61H5[6;5H[?25h[?25l1[23;61H6[6;6H[?25h[?25l1[23;61H7[6;7H[?25h[?25l[7;22r[7;1H[L[1;23r[23;59H[K[23;59H7,1[11CAll[7;1H[?25h[?25l3[23;61H2[7;2H[?25h[?25l[23;61H3[7;3H[?25h[?25l1[23;61H4[7;4H[?25h[?25l[23;61H5[7;5H[?25h[?25l0[23;61H6[7;6H[?25h[?25l[8;22r[8;1H[L[1;23r[23;59H[K[23;59H8,1[11CAll[8;1H[?25h[?25l[9;22r[9;1H[L[1;23r[23;59H[K[23;59H9,1[11CAll[9;1H[?25h[?25l1[23;61H2[9;2H[?25h[?25l[23;61H3[9;3H[?25h[?25l2[23;61H4[9;4H[?25h[?25l[23;61H5[9;5H[?25h[?25l3[23;61H6[9;6H[?25h[?25l[23;61H7[9;7H[?25h[?25l4[23;61H8[9;8H[?25h[?25l[23;61H9[9;9H[?25h[?25l5[23;61H10[9;10H[?25h[?25l[10;22r[10;1H[L[1;23r[23;59H[K[23;59H10,1[10CAll[10;1H[?25h[?25l1[23;62H2[10;2H[?25h[?25l[11;22r[11;1H[L[1;23r[23;59H[K[23;59H11,1[10CAll[11;1H[?25h[?25l2[23;62H2[11;2H[?25h[?25l[12;22r[12;1H[L[1;23r[23;59H[K[23;59H12,1[10CAll[12;1H[?25h[?25l3[23;62H2[12;2H[?25h[?25l[13;22r[13;1H[L[1;23r[23;59H[K[23;59H13,1[10CAll[13;1H[?25h[?25l4[23;62H2[13;2H[?25h[?25l[14;22r[14;1H[L[1;23r[23;59H[K[23;59H14,1[10CAll[14;1H[?25h[?25l5[23;62H2[14;2H[?25h[23;1H[K[14;1H[?25l[23;49H^[[14;1H[23;49H  [14;2H[23;59H14,1[10CAll[14;1H[?25h[?25l[23;49H:[14;1H[23;49H[K[23;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h
+[?25l[?2004l"in.txt" 15L, 72C written
+[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[00m$ vim in.txt[9@./matrixMult[C[C[C[C[C[C[C
+
+MATRIX A1
+1 4 6 10 
+2 7 5 3 
+
+MATRIX B1
+1 4 6 
+2 7 5 
+9 0 11 
+3 1 0 
+
+MATRIX A1 x B1
+93 42 92 
+70 60 102 
+
+MATRIX A2
+4 5 
+
+MATRIX B2
+1 2 3 
+4 5 0 
+
+MATRIX A2 x B2
+24 33 12 
+]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[00m$ vim in.txt
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;23r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[23;1H"in.txt" 15L, 72C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H2 4 3
+1 4 6 10
+2 7 5 3
+1 4 6
+2 7 5
+9 0 11
+3 1 0
+
+1 2 3 4 5
+1
+2
+3
+4
+5
+
+[94m~                                                                           [17;1H~                                                                           [18;1H~                                                                           [19;1H~                                                                           [20;1H~                                                                           [21;1H~                                                                           [22;1H~                                                                           [m[23;59H14,1[10CAll[14;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H2 4 3
+1 4 6 10
+2 7 5 3
+1 4 6
+2 7 5
+9 0 11
+3 1 0
+
+1 2 3 4 5
+1
+2
+3
+4
+5
+
+[94m~                                                                           [17;1H~                                                                           [18;1H~                                                                           [19;1H~                                                                           [20;1H~                                                                           [21;1H~                                                                           [22;1H~                                                                           [m[23;59H14,1[10CAll
+"in.txt" 15L, 72C[14;1H[?25h[?25l[23;49H~@k[14;1H[23;49H   [13;1H[23;60H3[13;1H[?25h[?25l[23;49H~@k[13;1H[23;49H   [12;1H[23;60H2[12;1H[?25h[?25l[23;49H~@k[12;1H[23;49H   [11;1H[23;60H1[11;1H[?25h[?25l[23;49H~@k[11;1H[23;49H   [10;1H[23;60H0[10;1H[?25h[?25l[23;49H~@k[10;1H[23;49H   [9;1H[23;59H9,1 [9;1H[?25h[?25l[23;49H~@k[9;1H[23;49H   [8;1H[23;59H8,0-1[8;1H[?25h[?25l[23;49H^M[8;1H[23;49H  [9;1H[23;59H9,1  [9;1H[?25h[?25l[23;49Hi[9;1H[23;49H [9;1H[23;1H[1m-- INSERT --[m[23;13H[K[23;59H9,1[11CAll[9;1H[?25h[?25l[23;59H8[8;1H[?25h[?25l[9;22r[9;1H[L[1;23r[23;59H[K[23;59H9,1[11CAll[9;1H[?25h[?25l1[23;61H2[9;2H[?25h[?25l[23;61H3[9;3H[?25h[?25l4[23;61H4[9;4H[?25h[?25l[23;61H5[9;5H[?25h[?25l1[23;61H6[9;6H[?25h[23;1H[K[9;5H[?25l[23;49H^[[9;5H[23;49H  [9;6H[23;59H9,5[11CAll[9;5H[?25h[?25l[23;49H:[9;5H[23;49H[K[23;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h
+[?25l[?2004l"in.txt" 16L, 78C written
+[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[00m$ vim in.txt[9@./matrixMult[C[C[C[C[C[C[C
+
+MATRIX A1
+1 4 6 10 
+2 7 5 3 
+
+MATRIX B1
+1 4 6 
+2 7 5 
+9 0 11 
+3 1 0 
+
+MATRIX A1 x B1
+93 42 92 
+70 60 102 
+
+MATRIX A2
+1 2 3 4 
+
+MATRIX B2
+5 
+1 
+2 
+3 
+
+MATRIX A2 x B2
+25 
+]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[00m$ cat[K[K[K./matrixMult in.txt
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pvim[C[C[C[C[C[C[C
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;23r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[23;1H"in.txt" 16L, 78C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H2 4 3
+1 4 6 10
+2 7 5 3
+1 4 6
+2 7 5
+9 0 11
+3 1 0
+
+1 4 1
+1 2 3 4 5
+1
+2
+3
+4
+5
+
+[94m~                                                                           [18;1H~                                                                           [19;1H~                                                                           [20;1H~                                                                           [21;1H~                                                                           [22;1H~                                                                           [m[23;59H9,5[11CAll[9;5H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H2 4 3
+1 4 6 10
+2 7 5 3
+1 4 6
+2 7 5
+9 0 11
+3 1 0
+
+1 4 1
+1 2 3 4 5
+1
+2
+3
+4
+5
+
+[94m~                                                                           [18;1H~                                                                           [19;1H~                                                                           [20;1H~                                                                           [21;1H~                                                                           [22;1H~                                                                           [m[23;59H9,5[11CAll
+"in.txt" 16L, 78C[9;5H[?25h[?25l[23;49H~@k[9;5H[23;49H   [10;5H[23;59H10,5[10;5H[?25h[?25l[23;49H~@k[10;5H[23;49H   [10;4H[23;62H4[10;4H[?25h[?25l[23;49H~@k[10;4H[23;49H   [10;3H[23;62H3[10;3H[?25h[?25l[23;49H~@k[10;3H[23;49H   [10;2H[23;62H2[10;2H[?25h[?25l[23;49H~@k[10;2H[23;49H   [10;1H[23;62H1[10;1H[?25h[?25l[23;49H~@k[10;1H[23;49H   [9;1H[23;59H9,1 [9;1H[?25h[?25l[23;49H~@k[9;1H[23;49H   [9;2H[23;61H2[9;2H[?25h[?25l[23;49H~@k[9;2H[23;49H   [9;3H[23;61H3[9;3H[?25h[?25l[23;49H~@k[9;3H[23;49H   [9;4H[23;61H4[9;4H[?25h[?25l[23;49H~@k[9;4H[23;49H   [9;3H[23;61H3[9;3H[?25h[?25l[23;49H5[9;3H[?25h[?25l[23;50H~@k[9;3H[23;49H    [9;5H[23;61H5[9;5H[?25h[?25l[23;49H~@k[9;5H[23;49H   [9;4H[23;61H4[9;4H[?25h[?25l[23;49H~@k[9;4H[23;49H   [9;3H[23;61H3[9;3H[?25h[?25l[23;49H5[9;3H[?25h[?25l[23;50Hi[9;3H[23;49H  [9;3H[23;1H[1m-- INSERT --[m[23;13H[K[23;59H9,3[11CAll[9;3H[?25h[?25l[23;61H4[9;4H[?25h[?25l 1[9;5H[K[23;61H3[9;3H[?25h[?25l5 1[23;61H4[9;4H[?25h[?25l[23;61H5[9;5H[?25h[?25l[23;61H6[9;6H[?25h[23;1H[K[9;5H[?25l[23;49H^[[9;5H[23;49H  [9;6H[23;59H9,5[11CAll[9;5H[?25h[?25l[23;49H:[9;5H[23;49H[K[23;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h
+[?25l[?2004l"in.txt" 16L, 78C written
+[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[00m$ vim in.txt[9@./matrixMult[C[C[C[C[C[C[C
+
+MATRIX A1
+1 4 6 10 
+2 7 5 3 
+
+MATRIX B1
+1 4 6 
+2 7 5 
+9 0 11 
+3 1 0 
+
+MATRIX A1 x B1
+93 42 92 
+70 60 102 
+
+MATRIX A2
+1 2 3 4 5 
+
+MATRIX B2
+1 
+2 
+3 
+4 
+5 
+
+MATRIX A2 x B2
+55 
+]0;neil@neil-VirtualBox: ~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[01;32mneil@neil-VirtualBox[00m:[01;34m~/Desktop/comp362/MarcelliniNeilLab05/matrixMult/cmake-build-debug/bin[00m$ exit
+exit
+
+Script done on 2019-09-29 22:55:33-07:00 [COMMAND_EXIT_CODE="0"]
